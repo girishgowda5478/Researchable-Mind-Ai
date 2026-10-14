@@ -18,7 +18,10 @@ import streamlit as st
 
 from utils.pdf_export import markdown_to_pdf
 
-BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
+BACKEND_URL = os.getenv(
+    "BACKEND_URL",
+    "https://researchable-mind-ai-api.onrender.com"
+).rstrip("/")
 
 st.set_page_config(page_title="ResearchMind AI", layout="wide")
 
